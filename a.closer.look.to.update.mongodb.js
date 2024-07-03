@@ -107,22 +107,22 @@ use("kec-crud");
 // );
 
 //? update lucky color of Suyasha to "Blue"
-db.scores.updateOne(
-  { name: "Suyasha" },
-  {
-    $set: {
-      "luckyThings.color": "Blue",
-    },
-  }
-);
+// db.scores.updateOne(
+//   { name: "Suyasha" },
+//   {
+//     $set: {
+//       "luckyThings.color": "Blue",
+//     },
+//   }
+// );
 
 //? update lucky number of Smarika to 8
-db.scores.updateOne(
-  { _id: ObjectId("66829a5bf3c4ba71cc8d320f") },
-  {
-    $set: {
-      "luckyThings.number": 8,
-    },
-  }
-);
+// db.scores.updateOne(
+//   { _id: ObjectId("66829a5bf3c4ba71cc8d320f") },
+//   {
+//     $set: {
+//       "luckyThings.number": 8,
+//     },
+//   }
+// );
 db.scores.find();
